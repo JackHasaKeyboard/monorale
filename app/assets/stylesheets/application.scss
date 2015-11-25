@@ -23,8 +23,10 @@
  }
 
  p {
- 	text-transform: none;
- 	letter-spacing: 0;
+ 	span {
+ 		text-transform: none;
+ 		letter-spacing: 0;
+	}
  }
 
  body, body * {
@@ -123,7 +125,7 @@
  }
 
  #push {
- 	min-height: calc(100% - 50px)
+ 	min-height: calc(100% - 46px)
  }
 
  .chain {
@@ -159,12 +161,41 @@
  }
 
  .cont {
- 	width: 60%;
- 	float: right;
+ 	width: calc(60% - 20px);
+ 	padding: 10px;
+	margin-left: 0;
  }
 
   #footer {
  	* {
  		float: left;
  	}
+ }
+
+ #img {
+ 	display: inline-block;
+ 	margin: 10px;
+ 	width: calc(40% - 32px);
+ 	#showcase {
+ 		background: red;
+ 		float: left;
+ 		width: 100%;
+ 	}
+ 	.tn {
+ 		img {
+ 			height: 60px;
+ 			/* max-width: calc(25% - 10px); */
+ 			float: left;
+ 			padding-right: 10px;
+ 			padding-top: 10px;
+ 			padding-bottom: 10px;
+ 		}
+
+ 		img:nth-of-type(n+2) {
+ 		}
+ 	}
+ }
+
+ #img, .ib {
+ 	float: left;
  }

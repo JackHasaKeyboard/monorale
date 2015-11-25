@@ -1,3 +1,5 @@
 Theme for tumblr, wordpress and such
 
 For when things get real contemporary
+
+Written in SCSS
